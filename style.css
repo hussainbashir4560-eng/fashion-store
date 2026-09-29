@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f3;
+    color: #111111;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(245, 245, 243, 0.95);
+    border-bottom: 1px solid #ddddda;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #777777;
+}
+
+.shop-btn {
+    padding: 11px 22px;
+    border: none;
+    background: #111111;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline,
+.section-label {
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 105px);
+    line-height: 0.9;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: #666666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background: #111111;
+    color: white;
+    border: 1px solid #111111;
+}
+
+.secondary-btn {
+    color: #111111;
+    border: 1px solid #999999;
+}
+
+
+/* FASHION CARD */
+
+.hero-fashion-card {
+    width: 360px;
+    height: 480px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1b1b1b;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0 #d8d8d4;
+}
+
+.fashion-label {
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.hero-fashion-card p {
+    font-size: 42px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.hero-fashion-card span {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #bbbbbb;
+}
+
+
+/* COLLECTION */
+
+.collection {
+    padding: 110px 7%;
+    background: #ffffff;
+}
+
+.collection h2,
+.about h2,
+.contact h2 {
+    font-size: clamp(38px, 5vw, 65px);
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: #f5f5f3;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddddda;
+    font-size: 70px;
+    font-weight: bold;
+    color: #aaaaa5;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.product-info strong {
+    font-size: 17px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 110px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about > p {
+    color: #666666;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 110px 7%;
+    text-align: center;
+    background: #111111;
+    color: white;
+}
+
+.contact h2 {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.contact .section-label {
+    color: #aaaaaa;
+}
+
+.contact > p:not(.section-label) {
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px 7%;
+    text-align: center;
+    background: #111111;
+    color: #777777;
+    border-top: 1px solid #292929;
+    font-size: 13px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-fashion-card {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .shop-btn {
+        padding: 9px 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero,
+    .collection,
+    .about,
+    .contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+    .hero-fashion-card {
+        height: 400px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
